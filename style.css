@@ -1,0 +1,83 @@
+/* Previous styles remain, add these below */
+
+.section { padding: 60px 10%; text-align: center; }
+
+/* Timeline Design */
+.timeline {
+    max-width: 600px;
+    margin: 40px auto;
+    border-left: 3px solid var(--saffron);
+    padding-left: 30px;
+    text-align: left;
+}
+
+.time-block {
+    margin-bottom: 25px;
+    position: relative;
+    padding: 15px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.05);
+}
+
+.time-block::before {
+    content: '';
+    position: absolute;
+    left: -38px;
+    top: 20px;
+    width: 12px;
+    height: 12px;
+    background: var(--deep-orange);
+    border-radius: 50%;
+}
+
+/* Form Styles */
+.registration-section {
+    background: linear-gradient(rgba(230, 126, 34, 0.1), rgba(230, 126, 34, 0.1)),
+                url('https://www.transparenttextures.com/patterns/paper-fibers.png');
+    padding: 80px 5%;
+}
+
+.form-container {
+    max-width: 700px;
+    margin: 0 auto;
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+.input-group {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-family: inherit;
+}
+
+.submit-btn {
+    background: var(--deep-orange);
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+    width: 100%;
+    font-size: 1.1rem;
+}
+
+.submit-btn:hover {
+    background: #d35400;
+    transform: scale(1.02);
+}
+
+.hidden { display: none; color: green; margin-top: 20px; font-weight: bold; }
+
