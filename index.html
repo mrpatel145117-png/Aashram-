@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashutosh Ashram | Student Portal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Lora&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">ASHUTOSH ASHRAM</div>
+        <ul class="nav-links">
+            <li><a href="#routine">Daily Life</a></li>
+            <li><a href="#register" class="enroll-link">Enroll Now</a></li>
+        </ul>
+    </nav>
+
+    <section id="routine" class="section">
+        <h2 class="reveal">A Day in the Life</h2>
+        <div class="timeline reveal">
+            <div class="time-block"><strong>05:00 AM</strong> - Mangala Arati & Meditation</div>
+            <div class="time-block"><strong>08:00 AM</strong> - Vedic Studies & Sanskrit</div>
+            <div class="time-block"><strong>10:00 AM</strong> - Modern Curriculum (Math/Science)</div>
+            <div class="time-block"><strong>04:00 PM</strong> - Seva (Gardening & Gosala)</div>
+        </div>
+    </section>
+
+    <section id="register" class="registration-section reveal">
+        <div class="form-container">
+            <h2>Student Enrollment</h2>
+            <p>Begin your journey of discipline and discovery.</p>
+            <form id="enrollmentForm">
+                <div class="input-group">
+                    <input type="text" placeholder="Student Full Name" required>
+                    <input type="email" placeholder="Parent Email" required>
+                </div>
+                <div class="input-group">
+                    <input type="tel" placeholder="Phone Number" required>
+                    <select required>
+                        <option value="">Select Age Group</option>
+                        <option value="junior">Junior (8-12)</option>
+                        <option value="senior">Senior (13-18)</option>
+                    </select>
+                </div>
+                <textarea placeholder="Tell us why you want to join the Ashram..."></textarea>
+                <button type="submit" class="submit-btn">Submit Application</button>
+            </form>
+            <div id="formFeedback" class="hidden">Thank you! Your application has been sent.</div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
